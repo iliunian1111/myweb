@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石油知识科普</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2em;
+            margin: 2em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>石油知识科普</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">石油简介</a></li>
+            <li><a href="#">开采技术</a></li>
+            <li><a href="#">环境影响</a></li>
+        </ul>
+    </nav>
+    <section id="intro">
+        <h2>石油简介</h2>
+        <p>石油又称原油，是一种粘稠的、深褐色液体。地壳上层部分地区有石油储存。它由不同的碳氢化合物混合组成，其主要组成成分是烷烃，此外石油中还含硫、氧、氮、磷、钒等元素。</p>
+    </section>
+    <section id="technology">
+        <h2>开采技术</h2>
+        <p>石油开采是一个复杂的过程，常见的开采技术包括自喷采油法、人工举升采油法等。随着技术的发展，水平井、水力压裂等新技术也越来越多地应用于石油开采中。</p>
+    </section>
+    <section id="environment">
+        <h2>环境影响</h2>
+        <p>石油的开采、加工和使用对环境都有一定的影响。例如，石油开采可能导致土地退化、水污染等问题；石油燃烧会释放大量的温室气体，加剧全球气候变化。</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 石油知识科普网</p>
+    </footer>
+    <script>
+        // 这里可以添加更多交互逻辑
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.textContent.toLowerCase();
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+    
